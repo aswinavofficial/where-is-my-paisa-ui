@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/where-is-my-paisa-ui",
+  basePath: isGitHubPages ? "/where-is-my-paisa-ui" : "",
   images: {
     unoptimized: true,
   },
