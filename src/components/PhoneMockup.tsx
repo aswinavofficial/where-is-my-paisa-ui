@@ -150,7 +150,7 @@ interface PhoneMockupProps {
 }
 
 export default function PhoneMockup({ screenIndex = 0, className = "" }: PhoneMockupProps) {
-  const Screen = screens[screenIndex % screens.length];
+  const Screen = screens[((screenIndex % screens.length) + screens.length) % screens.length];
   return (
     <div className={`phone-mockup ${className}`}>
       <div className="phone-mockup-screen">

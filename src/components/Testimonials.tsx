@@ -89,10 +89,11 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:shadow-primary/5 transition-all"
             >
               {/* Stars */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-4" role="img" aria-label={`${testimonial.rating} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
+                    aria-hidden="true"
                     className={`w-4 h-4 ${
                       i < testimonial.rating
                         ? "fill-amber-400 text-amber-400"

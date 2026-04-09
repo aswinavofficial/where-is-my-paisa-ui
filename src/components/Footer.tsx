@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-dark-lighter pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Where is my Paisa. All rights reserved.
+            &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> Where is my Paisa. All rights reserved.
           </p>
           <p className="text-sm text-gray-500 flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-secondary fill-secondary" /> in India

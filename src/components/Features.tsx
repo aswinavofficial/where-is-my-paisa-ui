@@ -16,7 +16,6 @@ const features = [
     title: "Expense Tracking",
     description:
       "Log every transaction effortlessly. Categorize expenses and keep a real-time tab on where your money goes.",
-    color: "from-primary to-primary-dark",
     bgColor: "bg-primary/10",
   },
   {
@@ -24,7 +23,6 @@ const features = [
     title: "Smart Analytics",
     description:
       "Beautiful charts and insights that help you understand your spending patterns at a glance.",
-    color: "from-secondary to-pink-600",
     bgColor: "bg-secondary/10",
   },
   {
@@ -32,7 +30,6 @@ const features = [
     title: "Budget Goals",
     description:
       "Set monthly budgets for each category and track your progress. Stay on top of your financial goals.",
-    color: "from-accent to-emerald-600",
     bgColor: "bg-accent/10",
   },
   {
@@ -40,7 +37,6 @@ const features = [
     title: "Smart Reminders",
     description:
       "Never miss a bill payment or budget limit. Get timely notifications to keep your finances on track.",
-    color: "from-amber-400 to-orange-500",
     bgColor: "bg-amber-100",
   },
   {
@@ -48,7 +44,6 @@ const features = [
     title: "Secure & Private",
     description:
       "Your financial data stays on your device. No cloud uploads, no third-party access. Your money, your business.",
-    color: "from-blue-400 to-blue-600",
     bgColor: "bg-blue-100",
   },
   {
@@ -56,7 +51,6 @@ const features = [
     title: "Offline First",
     description:
       "Works completely offline. No internet needed to track, analyze, or manage your personal finances.",
-    color: "from-violet-400 to-purple-600",
     bgColor: "bg-violet-100",
   },
 ];
