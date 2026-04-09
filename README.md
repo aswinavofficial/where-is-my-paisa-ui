@@ -7,7 +7,7 @@ A modern, responsive landing page for the **Where is my Paisa** Android app — 
 - **Next.js 16** — React framework for production
 - **TypeScript** — Type-safe development
 - **Tailwind CSS 4** — Utility-first styling
-- **Framer Motion** — Smooth animations
+- **Motion** — Smooth animations
 - **Lucide React** — Beautiful icons
 
 ## 🏃 Getting Started
