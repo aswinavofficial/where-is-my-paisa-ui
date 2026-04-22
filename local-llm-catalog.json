@@ -1,0 +1,109 @@
+{
+  "_comment": "Model catalog for Where Is My Paisa local LLM feature. Fetched at runtime from raw.githubusercontent.com. Update this file to roll out new or fine-tuned models without an app release. Fields marked with TODO will be populated once fine-tuning is complete.",
+  "catalogVersion": "vanilla-v1",
+  "defaultModelId": "llama-3.2-1b-instruct-q4km-v1",
+  "models": [
+    {
+      "id": "qwen2.5-0.5b-instruct-q4km-v1",
+      "displayName": "Qwen 2.5 0.5B Instruct Q4_K_M",
+      "provider": "Qwen / Alibaba Cloud",
+      "quantization": "Q4_K_M",
+      "tags": ["vanilla", "ultra-light"],
+      "baseModel": null,
+      "download": {
+        "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/main/qwen2.5-0.5b-instruct-q4_k_m.gguf",
+        "expiresAt": "",
+        "sizeBytes": 397500000,
+        "sha256": ""
+      },
+      "requirements": {
+        "minRamMb": 3000,
+        "recommendedFreeStorageMb": 600,
+        "abis": ["arm64-v8a"],
+        "minAndroidApi": 26
+      },
+      "metrics": {
+        "qualityScore": 6.5,
+        "medianDecodeTokensPerSec": 35.0,
+        "medianFirstTokenMs": 700,
+        "hallucinationRisk": "medium",
+        "batteryImpact": "low"
+      },
+      "recommendation": {
+        "tier": "compatible",
+        "reasons": ["Smallest footprint, runs on entry-level devices"],
+        "tradeoffs": ["Lower reasoning quality compared to 1B models"]
+      },
+      "allowByDefault": true,
+      "requiresWifi": true
+    },
+    {
+      "id": "llama-3.2-1b-instruct-q4km-v1",
+      "displayName": "Llama 3.2 1B Instruct Q4_K_M",
+      "provider": "Meta (community GGUF by bartowski)",
+      "quantization": "Q4_K_M",
+      "tags": ["vanilla", "light"],
+      "baseModel": null,
+      "download": {
+        "url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct-Q4_K_M.gguf",
+        "expiresAt": "",
+        "sizeBytes": 858000000,
+        "sha256": ""
+      },
+      "requirements": {
+        "minRamMb": 4000,
+        "recommendedFreeStorageMb": 1200,
+        "abis": ["arm64-v8a"],
+        "minAndroidApi": 26
+      },
+      "metrics": {
+        "qualityScore": 7.9,
+        "medianDecodeTokensPerSec": 20.0,
+        "medianFirstTokenMs": 1200,
+        "hallucinationRisk": "medium",
+        "batteryImpact": "medium"
+      },
+      "recommendation": {
+        "tier": "recommended",
+        "reasons": ["Best speed/quality balance for mid-range Indian Android devices"],
+        "tradeoffs": ["Requires 4 GB+ RAM"]
+      },
+      "allowByDefault": true,
+      "requiresWifi": true
+    },
+    {
+      "id": "smollm2-1.7b-instruct-q4km-v1",
+      "displayName": "SmolLM2 1.7B Instruct Q4_K_M",
+      "provider": "HuggingFace",
+      "quantization": "Q4_K_M",
+      "tags": ["vanilla", "standard"],
+      "baseModel": null,
+      "download": {
+        "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF/resolve/main/smollm2-1.7b-instruct-q4_k_m.gguf",
+        "expiresAt": "",
+        "sizeBytes": 1100000000,
+        "sha256": ""
+      },
+      "requirements": {
+        "minRamMb": 6000,
+        "recommendedFreeStorageMb": 1800,
+        "abis": ["arm64-v8a"],
+        "minAndroidApi": 26
+      },
+      "metrics": {
+        "qualityScore": 8.4,
+        "medianDecodeTokensPerSec": 14.0,
+        "medianFirstTokenMs": 1800,
+        "hallucinationRisk": "low",
+        "batteryImpact": "medium"
+      },
+      "recommendation": {
+        "tier": "compatible",
+        "reasons": ["Strongest quality at this size class", "Apache 2.0 license"],
+        "tradeoffs": ["Larger download, needs 6 GB+ RAM"]
+      },
+      "allowByDefault": true,
+      "requiresWifi": true
+    }
+  ]
+}
